@@ -1,24 +1,27 @@
 import styled from "styled-components"
 
+const _1color = "#000409"
+
 export const NavbarContainer = styled.div`
     width: 100%;
     height: 80px;
     position: sticky;
     top: 0;
     z-index: 99;
-    background-color: red;
+    background-color: #000409;
+    padding: 10px;
 `;
 
 export const NavbarWrapper = styled.div`
     margin: auto;
     width: 100%;
-    max-width: 1000px;
+    //max-width: 1300px;
     height: 100%;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: blue;
+    background-color: #000409;
 `;
 
 export const IconLogo = styled.div`
@@ -28,7 +31,8 @@ export const IconLogo = styled.div`
     align-items: center;
     font-family: "Oswald";
     font-size: 1.2rem;
-    color: green;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
 `;
 
 export const Menu = styled.ul`
@@ -45,7 +49,7 @@ export const Menu = styled.ul`
         left: ${({show}) => (show ? 0 : "100%")};
         flex-direction: column;
         transition: 0.5s all ease-in;
-        background-color: #49426c;
+        background-color: #000409;
     }
 `;
 
@@ -60,7 +64,7 @@ export const MenuItem = styled.li`
     font-weight: 400;
 
     &:hover {
-        background-color: deeppink;
+        background-color: #000409;
         border-bottom: 0.3rem solid #ebc00b;
         transition: 0.4s ease-in;
     }
@@ -72,7 +76,8 @@ export const MenuItem = styled.li`
 
 export const MenuItemLink = styled.a`
     text-decoration: none;
-    color: gold;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
 `;
 
 export const IconLogoMobile = styled.div`
@@ -81,7 +86,7 @@ export const IconLogoMobile = styled.div`
 
     @media screen and (max-width: 960px) {
         display: flex;
-        color: #ebc00b;
+        color: #fff;
         font-size: 2rem;
     }
 `;
