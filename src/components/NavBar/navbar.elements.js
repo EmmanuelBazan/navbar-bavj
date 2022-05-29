@@ -42,7 +42,7 @@ export const Menu = styled.ul`
         height: 90vh;
         position: absolute;
         top: 80px;
-        left: 0;
+        left: ${({show}) => (show ? 0 : "100%")};
         flex-direction: column;
         transition: 0.5s all ease-in;
         background-color: #49426c;
