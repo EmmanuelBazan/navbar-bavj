@@ -33,16 +33,16 @@ const NavBar = () => {
                     
                     <Menu show={showMenu}>
                         <MenuItem onClick={() => openMenu()}>
-                            <MenuItemLink>HOME</MenuItemLink>
+                            <MenuItemLink>ABOUT ME</MenuItemLink>
                         </MenuItem>
                         <MenuItem onClick={() => openMenu()}>
-                            <MenuItemLink>ABOUR US</MenuItemLink>
+                            <MenuItemLink>PORTAFOLIO</MenuItemLink>
                         </MenuItem>
                         <MenuItem onClick={() => openMenu()}>
-                            <MenuItemLink>SERVICES</MenuItemLink>
+                            <MenuItemLink>SKILLS</MenuItemLink>
                         </MenuItem>
                         <MenuItem onClick={() => openMenu()}>
-                            <MenuItemLink>COMUNITY</MenuItemLink>
+                            <MenuItemLink>EXPERIENCE</MenuItemLink>
                         </MenuItem>
                         <MenuItem onClick={() => openMenu()}>
                             <MenuItemLink>CONTACT</MenuItemLink>

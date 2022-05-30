@@ -1,7 +1,5 @@
 import styled from "styled-components"
 
-const _1color = "#000409"
-
 export const NavbarContainer = styled.div`
     width: 100%;
     height: 80px;
