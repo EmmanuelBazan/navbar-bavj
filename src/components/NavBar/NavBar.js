@@ -4,12 +4,20 @@ import { AiFillAlipayCircle } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
 import { CgClose } from "react-icons/cg";
 
+const CURRENT_HEIGTH = window.innerHeight
 
-const NavBar = () => {
+const NavBar = ({
+    homeRef,
+    aboutMeRef,
+    skillsRef,
+    portafolioRef,
+    experienceRef,
+    contactRef
+}) => {
 
     const [showMenu,setShowMenu] = useState(false)
 
-    const openMenu = () => {
+    const handleMenu = () => {
         setShowMenu(!showMenu)
     }
 
@@ -22,7 +30,7 @@ const NavBar = () => {
                         BAVJ
                     </IconLogo>
 
-                    <IconLogoMobile onClick={() => openMenu()}>
+                    <IconLogoMobile onClick={() => handleMenu()}>
                         {
                             showMenu ?
                             <CgClose/>
@@ -32,19 +40,34 @@ const NavBar = () => {
                     </IconLogoMobile>
                     
                     <Menu show={showMenu}>
-                        <MenuItem onClick={() => openMenu()}>
+                        <MenuItem onClick={() => {
+                            window.scrollTo(0, CURRENT_HEIGTH - 80)
+                            handleMenu()
+                        }}>
                             <MenuItemLink>ABOUT ME</MenuItemLink>
                         </MenuItem>
-                        <MenuItem onClick={() => openMenu()}>
-                            <MenuItemLink>PORTAFOLIO</MenuItemLink>
-                        </MenuItem>
-                        <MenuItem onClick={() => openMenu()}>
+                        <MenuItem onClick={() => {
+                            window.scrollTo(0, CURRENT_HEIGTH * 2 - 80)
+                            handleMenu()
+                        }}>
                             <MenuItemLink>SKILLS</MenuItemLink>
                         </MenuItem>
-                        <MenuItem onClick={() => openMenu()}>
+                        <MenuItem onClick={() => {
+                            window.scrollTo(0, CURRENT_HEIGTH * 3 - 80)
+                            handleMenu()
+                        }}>
+                            <MenuItemLink>PORTAFOLIO</MenuItemLink>
+                        </MenuItem>
+                        <MenuItem onClick={() => {
+                            window.scrollTo(0, CURRENT_HEIGTH * 4 - 80)
+                            handleMenu()
+                        }}>
                             <MenuItemLink>EXPERIENCE</MenuItemLink>
                         </MenuItem>
-                        <MenuItem onClick={() => openMenu()}>
+                        <MenuItem onClick={() => {
+                            window.scrollTo(0, CURRENT_HEIGTH * 5 - 80)
+                            handleMenu()
+                        }}>
                             <MenuItemLink>CONTACT</MenuItemLink>
                         </MenuItem>
                     </Menu>
