@@ -41,31 +41,46 @@ const NavBar = ({
                     
                     <Menu show={showMenu}>
                         <MenuItem onClick={() => {
-                            window.scrollTo(0, CURRENT_HEIGTH - 80)
+                            window.scrollTo({
+                                top: CURRENT_HEIGTH - 80,
+                                behavior: "smooth"
+                            })
                             handleMenu()
                         }}>
                             <MenuItemLink>ABOUT ME</MenuItemLink>
                         </MenuItem>
                         <MenuItem onClick={() => {
-                            window.scrollTo(0, CURRENT_HEIGTH * 2 - 80)
+                            window.scrollTo({
+                                top: CURRENT_HEIGTH * 2 - 80,
+                                behavior: "smooth"
+                            })
                             handleMenu()
                         }}>
                             <MenuItemLink>SKILLS</MenuItemLink>
                         </MenuItem>
                         <MenuItem onClick={() => {
-                            window.scrollTo(0, CURRENT_HEIGTH * 3 - 80)
+                            window.scrollTo({
+                                top: CURRENT_HEIGTH * 3 - 80,
+                                behavior: "smooth"
+                            })
                             handleMenu()
                         }}>
                             <MenuItemLink>PORTAFOLIO</MenuItemLink>
                         </MenuItem>
                         <MenuItem onClick={() => {
-                            window.scrollTo(0, CURRENT_HEIGTH * 4 - 80)
+                            window.scrollTo({
+                                top: CURRENT_HEIGTH * 4 - 80,
+                                behavior: "smooth"
+                            })
                             handleMenu()
                         }}>
                             <MenuItemLink>EXPERIENCE</MenuItemLink>
                         </MenuItem>
                         <MenuItem onClick={() => {
-                            window.scrollTo(0, CURRENT_HEIGTH * 5 - 80)
+                            window.scrollTo({
+                                top: CURRENT_HEIGTH * 5 - 80,
+                                behavior: "smooth"
+                            })
                             handleMenu()
                         }}>
                             <MenuItemLink>CONTACT</MenuItemLink>
