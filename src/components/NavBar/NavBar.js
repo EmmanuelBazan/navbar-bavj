@@ -6,14 +6,7 @@ import { CgClose } from "react-icons/cg";
 
 const CURRENT_HEIGTH = window.innerHeight
 
-const NavBar = ({
-    homeRef,
-    aboutMeRef,
-    skillsRef,
-    portafolioRef,
-    experienceRef,
-    contactRef
-}) => {
+const NavBar = () => {
 
     const [showMenu,setShowMenu] = useState(false)
 
@@ -42,7 +35,15 @@ const NavBar = ({
                     <Menu show={showMenu}>
                         <MenuItem onClick={() => {
                             window.scrollTo({
-                                top: CURRENT_HEIGTH - 80,
+                                top: 0,
+                                behavior: "smooth"
+                            })
+                        }}>
+                            <MenuItemLink>HOME</MenuItemLink>
+                        </MenuItem>
+                        <MenuItem onClick={() => {
+                            window.scrollTo({
+                                top: CURRENT_HEIGTH,
                                 behavior: "smooth"
                             })
                             handleMenu()
@@ -51,7 +52,7 @@ const NavBar = ({
                         </MenuItem>
                         <MenuItem onClick={() => {
                             window.scrollTo({
-                                top: CURRENT_HEIGTH * 2 - 80,
+                                top: CURRENT_HEIGTH * 2,
                                 behavior: "smooth"
                             })
                             handleMenu()
@@ -60,7 +61,7 @@ const NavBar = ({
                         </MenuItem>
                         <MenuItem onClick={() => {
                             window.scrollTo({
-                                top: CURRENT_HEIGTH * 3 - 80,
+                                top: CURRENT_HEIGTH * 3,
                                 behavior: "smooth"
                             })
                             handleMenu()
@@ -69,7 +70,7 @@ const NavBar = ({
                         </MenuItem>
                         <MenuItem onClick={() => {
                             window.scrollTo({
-                                top: CURRENT_HEIGTH * 4 - 80,
+                                top: CURRENT_HEIGTH * 4,
                                 behavior: "smooth"
                             })
                             handleMenu()
@@ -78,7 +79,7 @@ const NavBar = ({
                         </MenuItem>
                         <MenuItem onClick={() => {
                             window.scrollTo({
-                                top: CURRENT_HEIGTH * 5 - 80,
+                                top: CURRENT_HEIGTH * 5,
                                 behavior: "smooth"
                             })
                             handleMenu()

@@ -1,12 +1,14 @@
 import { SkillsContainer } from "./skills.elements"
-
-const CURRENT_HEIGHT = window.innerHeight
+import useWindowDimensions from "../../hooks/useWindowDimensions"
 
 const Skills = () => {
+
+    const { height } = useWindowDimensions()
+    
     return (
         <>
-            <SkillsContainer _currentHeight={CURRENT_HEIGHT}>
-                <text>Skills</text>
+            <SkillsContainer _currentHeight={height}>
+                Skills
             </SkillsContainer>
         </>
     )

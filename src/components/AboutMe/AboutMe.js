@@ -1,12 +1,14 @@
 import { AboutMeContainer } from "./AboutMe.elements"
+import useWindowDimensions from '../../hooks/useWindowDimensions'
 
 const AboutMe = () => {
 
-    const CURRENT_HEIGTH = window.innerHeight
+    const { height } = useWindowDimensions()
+
     return (
         <>
-            <AboutMeContainer _currentHeigth={CURRENT_HEIGTH}>
-                <text>About me</text>
+            <AboutMeContainer _currentHeigth={height}>
+                About me
             </AboutMeContainer>
         </>
     )

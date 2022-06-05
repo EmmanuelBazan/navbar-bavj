@@ -8,6 +8,10 @@ export const NavbarContainer = styled.div`
     z-index: 99;
     background-color: #000409;
     padding: 10px;
+
+    @media screen and (max-width: 960px){
+        position: sticky;
+    }
 `;
 
 export const NavbarWrapper = styled.div`

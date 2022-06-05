@@ -1,12 +1,13 @@
 import { ContactContainer } from "./contact.elements"
-
-const CURRENT_HEIGHT = window.innerHeight
+import useWindowDimensions from "../../hooks/useWindowDimensions"
 
 const Contact = () => {
+
+    const { height } = useWindowDimensions()
     return (
         <>
-            <ContactContainer _currentHeight={CURRENT_HEIGHT}>
-                <text>Contact</text>
+            <ContactContainer _currentHeight={height}>
+                Contact
             </ContactContainer>
         </>
     )

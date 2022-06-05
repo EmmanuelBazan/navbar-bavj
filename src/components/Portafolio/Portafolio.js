@@ -1,12 +1,14 @@
 import { PortafolioContainer } from "./portafolio.elements"
-
-const CURRENT_HEIGHT = window.innerHeight
+import useWindowDimensions from "../../hooks/useWindowDimensions"
 
 const Portafolio = () => {
+
+    const { height } = useWindowDimensions()
+
     return (
         <>
-            <PortafolioContainer _currentHeight={CURRENT_HEIGHT}>
-                <text>Portafolio</text>
+            <PortafolioContainer _currentHeight={height}>
+                Portafolio
             </PortafolioContainer>
         </>
     )

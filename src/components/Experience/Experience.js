@@ -1,12 +1,14 @@
 import { ExperienceContainer } from "./experience.elements"
-
-const CURRENT_HEIGHT = window.innerHeight
+import useWindowDimensions from "../../hooks/useWindowDimensions"
 
 const Experience = () => {
+
+    const { height } = useWindowDimensions()
+
     return (
         <>
-            <ExperienceContainer _currentHeight={CURRENT_HEIGHT}>
-                <text>Experience</text>
+            <ExperienceContainer _currentHeight={height}>
+                Experience
             </ExperienceContainer>
         </>
     )
