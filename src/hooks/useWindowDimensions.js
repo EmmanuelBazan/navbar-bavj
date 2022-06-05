@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 const getWindowDimensions = () => {
-    const { innerWidth: width, innerHeigth: height } = window
+    const { innerWidth: width, innerHeight: height } = window
     return {
         width,
         height
@@ -14,6 +14,7 @@ const useWindowDimensions = () => {
     useEffect(() => {
         const handleResize = () => {
             setWindowDimensions(getWindowDimensions())
+            console.log("CHANGE SIZE SCREEN < ---------------------------- ",windowDimensions)
         }
 
         window.addEventListener('resize',handleResize)

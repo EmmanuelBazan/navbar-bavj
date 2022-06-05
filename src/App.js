@@ -7,11 +7,18 @@ import Portafolio from './components/Portafolio/Portafolio';
 import Experience from './components/Experience/Experience';
 import Contact from './components/Contact/Contact';
 
+import useWindowDimensions from './hooks/useWindowDimensions';
+
 function App() {
+
+  const { height } = useWindowDimensions()
 
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar 
+        _current_height={height}
+      >
+      </NavBar>
       <Home></Home>
       <AboutMe></AboutMe>
       <Skills></Skills>

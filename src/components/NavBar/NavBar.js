@@ -4,9 +4,9 @@ import { AiFillAlipayCircle } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
 import { CgClose } from "react-icons/cg";
 
-const CURRENT_HEIGTH = window.innerHeight
-
-const NavBar = () => {
+const NavBar = ({
+    _current_height = 100
+}) => {
 
     const [showMenu,setShowMenu] = useState(false)
 
@@ -43,7 +43,7 @@ const NavBar = () => {
                         </MenuItem>
                         <MenuItem onClick={() => {
                             window.scrollTo({
-                                top: CURRENT_HEIGTH,
+                                top: _current_height,
                                 behavior: "smooth"
                             })
                             handleMenu()
@@ -52,7 +52,7 @@ const NavBar = () => {
                         </MenuItem>
                         <MenuItem onClick={() => {
                             window.scrollTo({
-                                top: CURRENT_HEIGTH * 2,
+                                top: _current_height * 2,
                                 behavior: "smooth"
                             })
                             handleMenu()
@@ -61,7 +61,7 @@ const NavBar = () => {
                         </MenuItem>
                         <MenuItem onClick={() => {
                             window.scrollTo({
-                                top: CURRENT_HEIGTH * 3,
+                                top: _current_height * 3,
                                 behavior: "smooth"
                             })
                             handleMenu()
@@ -70,7 +70,7 @@ const NavBar = () => {
                         </MenuItem>
                         <MenuItem onClick={() => {
                             window.scrollTo({
-                                top: CURRENT_HEIGTH * 4,
+                                top: _current_height * 4,
                                 behavior: "smooth"
                             })
                             handleMenu()
@@ -79,7 +79,7 @@ const NavBar = () => {
                         </MenuItem>
                         <MenuItem onClick={() => {
                             window.scrollTo({
-                                top: CURRENT_HEIGTH * 5,
+                                top: _current_height * 5,
                                 behavior: "smooth"
                             })
                             handleMenu()
