@@ -3,7 +3,7 @@ import useWindowDimensions from "../../hooks/useWindowDimensions"
 
 const Home = () => {
 
-    const { height } = useWindowDimensions
+    const { height } = useWindowDimensions()
     return (
         <>
             <HomeContainer _currentHeigth={height}>

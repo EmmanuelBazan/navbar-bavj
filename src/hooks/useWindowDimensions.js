@@ -14,7 +14,6 @@ const useWindowDimensions = () => {
     useEffect(() => {
         const handleResize = () => {
             setWindowDimensions(getWindowDimensions())
-            console.log("CHANGE SIZE SCREEN < ---------------------------- ",windowDimensions)
         }
 
         window.addEventListener('resize',handleResize)

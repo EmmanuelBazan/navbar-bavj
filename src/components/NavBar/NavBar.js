@@ -4,11 +4,13 @@ import { AiFillAlipayCircle } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
 import { CgClose } from "react-icons/cg";
 
+import useNavbar from "../../hooks/navbar/useNavbar";
 const NavBar = ({
     _current_height = 100
 }) => {
 
     const [showMenu,setShowMenu] = useState(false)
+    const { show } = useNavbar()
 
     const handleMenu = () => {
         setShowMenu(!showMenu)
@@ -16,7 +18,7 @@ const NavBar = ({
 
     return (
         <>
-            <NavbarContainer>
+            <NavbarContainer _showHead={show}>
                 <NavbarWrapper>
                     <IconLogo>
                         <AiFillAlipayCircle size={"2em"}/>
@@ -38,6 +40,7 @@ const NavBar = ({
                                 top: 0,
                                 behavior: "smooth"
                             })
+                            handleMenu()
                         }}>
                             <MenuItemLink>HOME</MenuItemLink>
                         </MenuItem>

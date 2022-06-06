@@ -3,15 +3,11 @@ import styled from "styled-components"
 export const NavbarContainer = styled.div`
     width: 100%;
     height: 50px;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    top: ${({_showHead}) => (_showHead ? 0 : "-50px")};
     z-index: 99;
     background-color: #000409;
     padding: 10px;
-
-    @media screen and (max-width: 960px){
-        position: sticky;
-    }
 `;
 
 export const NavbarWrapper = styled.div`
@@ -32,7 +28,7 @@ export const IconLogo = styled.div`
     justify-content: flex-start;
     align-items: center;
     font-family: "Oswald";
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #fff;
     font-family: 'Quicksand', sans-serif;
 `;
@@ -47,7 +43,7 @@ export const Menu = styled.ul`
         width: 100%;
         height: 90vh;
         position: absolute;
-        top: 80px;
+        top: 50px;
         left: ${({show}) => (show ? 0 : "100%")};
         flex-direction: column;
         transition: 0.5s all ease-in;
@@ -61,7 +57,7 @@ export const MenuItem = styled.li`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: "Oswald";
     font-weight: 400;
 
@@ -89,7 +85,7 @@ export const IconLogoMobile = styled.div`
     @media screen and (max-width: 960px) {
         display: flex;
         color: #fff;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 `;
 
