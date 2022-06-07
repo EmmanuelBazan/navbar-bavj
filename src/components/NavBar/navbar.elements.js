@@ -1,13 +1,39 @@
-import styled from "styled-components"
+import styled, { keyframes, css } from "styled-components"
+
+const slide_down = keyframes`
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+`
+
+const slide_up = keyframes`
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-50px);
+    }
+`
 
 export const NavbarContainer = styled.div`
     width: 100%;
     height: 50px;
     position: fixed;
-    top: ${({_showHead}) => (_showHead ? 0 : "-50px")};
     z-index: 99;
     background-color: #000409;
     padding: 10px;
+    animation: ${({_showHead}) => (_showHead ? 
+        css`
+            ${slide_down} 0.3s forwards 1;
+        `
+    :
+        css`
+            ${slide_up} 0.3s forwards 1;
+        `
+    )};
 `;
 
 export const NavbarWrapper = styled.div`

@@ -1,20 +1,23 @@
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 const useNavbar = () => {
     
-    const [ Yposition, setYposition ] = useState(0)
     const [ show, setShow ] = useState(true)
+
+    const Yposition = useRef(0)
 
     useEffect(() => {
 
         const updateYposition = () => {
-            if(window.pageYOffset > Yposition){
+            if(window.pageYOffset > Yposition.current){
                 setShow(false)
+                Yposition.current = window.pageYOffset
             }
-            else if(window.pageYOffset < Yposition){
+            else if(window.pageYOffset < Yposition.current){
                 setShow(true)
+                Yposition.current = window.pageYOffset
             }
-            setYposition(window.pageYOffset)
+            
         }
 
         window.addEventListener('scroll',updateYposition)
