@@ -23,6 +23,10 @@ export const PresentationText = styled.text`
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     font-size: 2rem;
+
+    @media screen and (max-width: 960px){
+        font-size: 1.8rem
+    }
 `
 
 export const NameText = styled.text`
@@ -30,4 +34,8 @@ export const NameText = styled.text`
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 5rem;
+
+    @media screen and (max-width: 960px){
+        font-size: 3.5rem;
+    }
 `
