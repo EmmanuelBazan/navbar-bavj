@@ -11,6 +11,14 @@ const devConfig = {
             directory: path.join(__dirname,"../dist")
         },
         open: true
+    },
+    module: {
+        rules: [
+            {
+                use: ["style-loader","css-loader"],
+                test: /\.(css)$/,
+            }
+        ]
     }
 }
 
