@@ -1,4 +1,14 @@
-import { HomeContainer, NameText, PresentationText, TextPresentationContainer } from "./Home.elements"
+import { 
+    HomeContainer, 
+    FirstColumn, 
+    SecondColumn, 
+    WelcomeCard, 
+    ProjectsCard, 
+    ExpirienceCard, 
+    ExpirienceContainer,
+    AboutMeCard,
+    ContactCard,
+} from "./Home.elements"
 import useWindowDimensions from "../../hooks/useWindowDimensions"
 
 const Home = () => {
@@ -6,7 +16,18 @@ const Home = () => {
     const { height } = useWindowDimensions()
     return (
         <HomeContainer _currentHeigth={height}>
-            <TextPresentationContainer>
+            <FirstColumn _currentHeigth={height}>
+                <WelcomeCard/>
+                <ExpirienceContainer>
+                    <ExpirienceCard/>
+                    <ProjectsCard/>
+                </ExpirienceContainer>
+            </FirstColumn>
+            <SecondColumn _currentHeigth={height}>
+                <AboutMeCard/>
+                <ContactCard/>
+            </SecondColumn>
+            {/* <TextPresentationContainer>
                 <PresentationText>
                     Hello i'm
                 </PresentationText>
@@ -16,7 +37,7 @@ const Home = () => {
                 <PresentationText>
                     Web developper
                 </PresentationText>
-            </TextPresentationContainer>
+            </TextPresentationContainer> */}
         </HomeContainer>
     )
 }
