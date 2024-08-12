@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import {Bookstack} from '@styled-icons/simple-icons/Bookstack'
+import {Gears} from '@styled-icons/fa-solid/Gears'
 
 const backgroundColorAnimation = keyframes`
     0% {
@@ -7,7 +7,7 @@ const backgroundColorAnimation = keyframes`
         color: #0d0d0d;
     }
     100% {
-        background-color: #F29F05;
+        background-color: #F27405;
         color: #f1f1f1;
     }
 `
@@ -42,14 +42,12 @@ export const SubTitle = styled.text`
     }
 `
 
-export const ExpirienceCardContainer = styled.div`
+export const ProjectsCardContainer = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     background-color: #f1f1f1;
-    width: 40%;
+    width: 60%;
     height: 100%;
-    margin-right: 10px;
     border-radius: 15px;
     padding: 20px;
     cursor: pointer;
@@ -58,7 +56,7 @@ export const ExpirienceCardContainer = styled.div`
 
     &:hover {
         animation: ${backgroundColorAnimation} 0.2s linear;
-        background-color: #F29F05;
+        background-color: #F27405;
     }
 
     &:hover ${Title} {
@@ -71,15 +69,14 @@ export const ExpirienceCardContainer = styled.div`
 
     @media screen and (max-width: 960px){
         width: 100%;
-        margin-bottom: 10px;
-        background-color: #F29F05;
+        background-color: #F27405;
     }
 `
 
-export const BookIcon = styled(Bookstack)`
+export const GearIcon = styled(Gears)`
     color: #f1f1f1;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     background-color: transparent;
 `
 
@@ -89,5 +86,6 @@ export const IconContainer = styled.div`
     width: 100%;
     height: 70%;
     justify-content: flex-end;
+    align-items: flex-end;
     background-color: transparent;
 `

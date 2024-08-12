@@ -47,20 +47,6 @@ export const ExpirienceContainer = styled.div`
     }
 `
 
-
-
-export const ProjectsCard = styled.div`
-    display: flex;
-    background-color: #f1f1f1;
-    width: 60%;
-    height: 100%;
-    border-radius: 15px;
-
-    @media screen and (max-width: 960px){
-        width: 100%;
-    }
-`
-
 export const AboutMeCard = styled.div`
     display: flex;
     background-color: #f1f1f1;
