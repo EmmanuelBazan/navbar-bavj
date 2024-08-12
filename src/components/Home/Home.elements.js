@@ -56,14 +56,6 @@ export const AboutMeCard = styled.div`
     margin-bottom: 10px;
 `
 
-export const ContactCard = styled.div`
-    display: flex;
-    background-color: #f1f1f1;
-    width: 100%;
-    height: 20%;
-    border-radius: 15px;
-`
-
 export const TextPresentationContainer = styled.div`
     display: flex;
     flex-direction: column;
