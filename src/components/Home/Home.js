@@ -3,13 +3,13 @@ import {
     FirstColumn, 
     SecondColumn, 
     ProjectsCard, 
-    ExpirienceCard, 
     ExpirienceContainer,
     AboutMeCard,
     ContactCard,
 } from "./Home.elements"
 import useWindowDimensions from "../../hooks/useWindowDimensions"
 import WelcomeCard from "./components/WelcomeCard"
+import ExpirienceCard from "./components/ExperienceCard"
 
 const Home = () => {
     const { height } = useWindowDimensions()

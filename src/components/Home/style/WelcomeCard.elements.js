@@ -12,7 +12,7 @@ const crecerYReducir = keyframes`
         width: 62px;
         height: 62px;
     }
-`;
+`
 
 export const WelcomeCardContainer = styled.div`
     display: flex;
@@ -52,7 +52,7 @@ export const NameText = styled.text`
     color: #0d0d0d;
     font-family: 'Playfair+Display', serif;
     font-weight: 900;
-    font-size: 6rem;
+    font-size: 7rem;
     background-color: transparent;
     padding: 0px;
 
@@ -102,6 +102,7 @@ export const LinkedinIcon = styled(LinkedinSquare)`
         height: 62px;
     }
 `
+
 export const GithubIcon = styled(Github)`
     color: #0d0d0d;
     width: 42px;
