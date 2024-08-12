@@ -36,15 +36,6 @@ export const SecondColumn = styled.div`
     }
 `
 
-export const WelcomeCard = styled.div`
-    display: flex;
-    background-color: #f1f1f1;
-    width: 100%;
-    height: 50%;
-    margin-bottom: 10px;
-    border-radius: 15px;
-`
-
 export const ExpirienceContainer = styled.div`
     display: flex;
     flex-direction: row;
@@ -107,24 +98,16 @@ export const TextPresentationContainer = styled.div`
     margin: 20px;
 `
 
-export const PresentationText = styled.text`
-    color: #F2F2F0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    font-size: 2rem;
 
-    @media screen and (max-width: 960px){
-        font-size: 1.8rem
-    }
+
+export const IconContariner = styled.div`
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 10px;
 `
 
-export const NameText = styled.text`
-    color: #F2F2F0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: 5rem;
 
-    @media screen and (max-width: 960px){
-        font-size: 3.5rem;
-    }
-`
+

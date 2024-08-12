@@ -2,7 +2,6 @@ import {
     HomeContainer, 
     FirstColumn, 
     SecondColumn, 
-    WelcomeCard, 
     ProjectsCard, 
     ExpirienceCard, 
     ExpirienceContainer,
@@ -10,9 +9,9 @@ import {
     ContactCard,
 } from "./Home.elements"
 import useWindowDimensions from "../../hooks/useWindowDimensions"
+import WelcomeCard from "./components/WelcomeCard"
 
 const Home = () => {
-
     const { height } = useWindowDimensions()
     return (
         <HomeContainer _currentHeigth={height}>
