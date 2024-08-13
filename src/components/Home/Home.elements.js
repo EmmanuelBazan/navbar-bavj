@@ -47,15 +47,6 @@ export const ExpirienceContainer = styled.div`
     }
 `
 
-export const AboutMeCard = styled.div`
-    display: flex;
-    background-color: #f1f1f1;
-    width: 100%;
-    height: 80%;
-    border-radius: 15px;
-    margin-bottom: 10px;
-`
-
 export const TextPresentationContainer = styled.div`
     display: flex;
     flex-direction: column;

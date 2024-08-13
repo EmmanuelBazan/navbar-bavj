@@ -7,7 +7,7 @@ const backgroundColorAnimation = keyframes`
         color: #0d0d0d;
     }
     100% {
-        background-color: #F24405;
+        background-color: #BA2D17;
         color: #f1f1f1;
     }
 `
@@ -42,7 +42,7 @@ export const ContactCardContainer = styled.div`
 
     &:hover {
         animation: ${backgroundColorAnimation} 0.2s linear;
-        background-color: #F24405;
+        background-color: #BA2D17;
     }
 
     &:hover ${Title} {
@@ -50,7 +50,7 @@ export const ContactCardContainer = styled.div`
     }
 
     @media screen and (max-width: 960px){
-        background-color: #F24405;
+        background-color: #BA2D17;
     }
 `
 

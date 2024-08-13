@@ -7,7 +7,7 @@ const backgroundColorAnimation = keyframes`
         color: #0d0d0d;
     }
     100% {
-        background-color: #E98807;
+        background-color: #343644;
         color: #f1f1f1;
     }
 `
@@ -42,23 +42,28 @@ export const SubTitle = styled.text`
     }
 `
 
-export const ExpirienceCardContainer = styled.div`
+export const AboutMeContainer = styled.div`
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     background-color: #f1f1f1;
-    width: 40%;
-    height: 100%;
-    margin-right: 10px;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
     border-radius: 15px;
+    margin-bottom: 10px;
     padding: 20px;
     cursor: pointer;
-    animation: none;
-    transition: background-color 0.2s ease;
+    /* animation: none; */
+    /* transition: background-color 0.2s ease; */
 
-    &:hover {
+    background-image: url('https://i.pinimg.com/564x/56/dc/f3/56dcf3ebaa545146695ee13371c5fb7a.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+
+    /* &:hover {
         animation: ${backgroundColorAnimation} 0.2s linear;
-        background-color: #E98807;
+        background-color: #343644;
     }
 
     &:hover ${Title} {
@@ -67,12 +72,12 @@ export const ExpirienceCardContainer = styled.div`
 
     &:hover ${SubTitle} {
         color: #f1f1f1;
-    }
+    } */
 
     @media screen and (max-width: 960px){
         width: 100%;
         margin-bottom: 10px;
-        background-color: #E98807;
+        background-color: #343644;
     }
 `
 

@@ -7,7 +7,7 @@ const backgroundColorAnimation = keyframes`
         color: #0d0d0d;
     }
     100% {
-        background-color: #F27405;
+        background-color: #31776E;
         color: #f1f1f1;
     }
 `
@@ -56,7 +56,7 @@ export const ProjectsCardContainer = styled.div`
 
     &:hover {
         animation: ${backgroundColorAnimation} 0.2s linear;
-        background-color: #F27405;
+        background-color: #31776E;
     }
 
     &:hover ${Title} {
@@ -69,7 +69,7 @@ export const ProjectsCardContainer = styled.div`
 
     @media screen and (max-width: 960px){
         width: 100%;
-        background-color: #F27405;
+        background-color: #31776E;
     }
 `
 
