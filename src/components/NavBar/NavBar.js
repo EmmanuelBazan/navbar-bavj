@@ -1,5 +1,13 @@
 import React, { useState } from "react";
-import { IconLogo, MenuItemLink, Menu, NavbarContainer, MenuItem, NavbarWrapper, IconLogoMobile } from "./navbar.elements";
+import { 
+    IconLogo, 
+    MenuItemLink, 
+    Menu, 
+    NavbarContainer, 
+    MenuItem, 
+    NavbarWrapper, 
+    IconLogoMobile 
+} from "./navbar.elements";
 import { AiFillAlipayCircle } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
 import { CgClose } from "react-icons/cg";
