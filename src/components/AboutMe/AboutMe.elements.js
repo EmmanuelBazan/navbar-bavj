@@ -5,6 +5,8 @@ export const AboutMeContainer = styled.div`
     display: flex;
     flex-direction: row;
     background-color: #0D0D0D;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: ${({_currentHeigth = 100}) => _currentHeigth}px;
 
@@ -20,8 +22,8 @@ export const PhotoContainer = styled.div`
     align-items: flex-end;
     padding: 20px;
     background-color: #0D0D0D;
-    height: 100%;
-    width: 40%;
+    height: 80%;
+    width: 30%;
 
     @media screen and (max-width: 960px){
         width: 100%;
@@ -35,10 +37,12 @@ export const DescriptionContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 20px;
-    background-color: #0D0D0D;
-    height: 100%;
+    align-items: center;
+    padding: 50px;
+    background-color: #f1f1f1;
+    height: 80%;
     width: 60%;
+    border-radius: 15px;
 
     @media screen and (max-width: 960px){
         width: 100%;
@@ -47,29 +51,46 @@ export const DescriptionContainer = styled.div`
     }
 `
 
-export const Title = styled.text`
-    color: #BF8136;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    font-weight: 300;
+export const Title = styled.p`
+    color: #0d0d0d;
+    font-family: 'Playfair+Display', serif;
+    font-weight: 700;
+    font-size: 4rem;
+    background-color: transparent;
+    padding: 0px;
+    transition: color 0.2s ease;
+
+    @media screen and (max-width: 960px){
+        font-size: 3.5rem;
+        color: #f1f1f1;
+    }
 `
 
 export const DescriptionText = styled.text`
-    color: #FFFBF4;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
-    max-width: 500px;
+    color: #0d0d0d;
+    font-family: 'Playfair+Display', serif;
+    font-weight: 100;
+    font-size: 2rem;
+    background-color: transparent;
+    padding: 0px;
+    transition: color 0.2s ease;
+
+    @media screen and (max-width: 960px){
+        font-size: 1rem;
+        color: #f1f1f1;
+    }
 `
 
 export const BtnCv = styled.div`
     display: flex;
-    background-color: #BF8136;
+    background-color: #f1f1f1;
     width: 200px;
     height: 50px;
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
+    border: 3px solid black;
+    border-radius: 10px;
 
     @media screen and (max-width: 960px){
         width: 100%;
@@ -79,9 +100,12 @@ export const BtnCv = styled.div`
 
 export const Photo = styled.div`
     background-image: url(${myPhoto});
+    background-size: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-color: #fff;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     min-width: 350px;
 
     @media screen and (max-width: 960px){

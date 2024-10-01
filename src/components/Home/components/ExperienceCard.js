@@ -1,4 +1,10 @@
-import { ExpirienceCardContainer, SubTitle, Title, BookIcon, IconContainer } from "../style/ExpirienceCard.elements";
+import { 
+    ExpirienceCardContainer, 
+    SubTitle, 
+    Title, 
+    BookIcon, 
+    IconContainer 
+} from "../style/ExpirienceCard.elements";
 
 
 const ExpirienceCard = () => {
