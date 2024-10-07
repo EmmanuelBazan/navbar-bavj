@@ -1,3 +1,4 @@
+import useWindowDimensions from "../../../hooks/useWindowDimensions";
 import { 
     ExpirienceCardContainer, 
     SubTitle, 
@@ -8,8 +9,14 @@ import {
 
 
 const ExpirienceCard = () => {
+    const { height } = useWindowDimensions()
     return(
-        <ExpirienceCardContainer>
+        <ExpirienceCardContainer onClick={() => {
+            window.scrollTo({
+                top: height * 2,
+                behavior: "smooth"
+            })
+        }} >
             <IconContainer>
                 <BookIcon/>
             </IconContainer>
