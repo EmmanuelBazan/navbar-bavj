@@ -99,6 +99,14 @@ export const BtnCv = styled.div`
     }
 `
 
+// Estilo para quitar el estilo predeterminado del enlace
+export const StyledAnchor = styled.a`
+    text-decoration: none;
+    background-color: #f1f1f1;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+`;
+
 export const Photo = styled.div`
     background-image: url(${myPhoto});
     background-size: cover; /* Ajusta la imagen para cubrir completamente el contenedor */

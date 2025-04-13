@@ -1,7 +1,8 @@
 import { 
     AboutMeContainer, 
     BtnCv, 
-    DescriptionContainer, 
+    DescriptionContainer,
+    StyledAnchor,
     DescriptionText, 
     PhotoContainer, 
     Title,
@@ -25,9 +26,9 @@ const AboutMe = () => {
                     I’m always eager to learn new things, improve my skills, and work on projects where I can solve real-world problems. I'm naturally curious and always looking for ways to do things a little better than the day before.
                     Right now, I'm focused on growing as a developer and contributing my experience to projects where code can make a real difference.
                     </DescriptionText>
-                    <a href={cv} download="Mi_CV.pdf">
+                    <StyledAnchor href={cv} download="Mi_CV.pdf">
                         <BtnCv>download CV</BtnCv>
-                    </a>
+                    </StyledAnchor>
                 </DescriptionContainer>
                 {/* <PhotoContainer>
                     <Photo></Photo>
