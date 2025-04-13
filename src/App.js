@@ -15,16 +15,16 @@ function App() {
 
   return (
     <>
-      <NavBar 
+      {/* <NavBar 
         _current_height={height}
       >
-      </NavBar>
+      </NavBar> */}
       <Home></Home>
       <AboutMe></AboutMe>
       <Skills></Skills>
-      <Portafolio></Portafolio>
+      {/* <Portafolio></Portafolio>
       <Experience></Experience>
-      <Contact></Contact>
+      <Contact></Contact> */}
     </>
   );
 }

@@ -2,12 +2,49 @@ import styled from 'styled-components'
 
 export const HomeContainer = styled.div`
     display: flex;
-    background-color: #0D0D0D;
+    flex-direction: row;
+    background-color: #0d0d0d;
     height: ${({_currentHeigth}) => _currentHeigth}px;
-    width: "100%";
-    padding-top: 50px;
+    width: 100%;
     justify-content: start;
     align-items: center;
+`
+
+export const FirstColumn = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: ${({_currentHeigth}) => _currentHeigth}px;
+    width: 66%;
+    padding: 10px;
+
+    @media screen and (max-width: 960px){
+        width: 50%;
+    }
+`
+
+export const SecondColumn = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: ${({_currentHeigth}) => _currentHeigth}px;
+    width: 33%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+    @media screen and (max-width: 960px){
+        width: 50%;
+    }
+`
+
+export const ExpirienceContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+
+    @media screen and (max-width: 960px){
+        flex-direction: column;
+    }
 `
 
 export const TextPresentationContainer = styled.div`
@@ -18,24 +55,16 @@ export const TextPresentationContainer = styled.div`
     margin: 20px;
 `
 
-export const PresentationText = styled.text`
-    color: #F2F2F0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    font-size: 2rem;
 
-    @media screen and (max-width: 960px){
-        font-size: 1.8rem
-    }
+
+export const IconContariner = styled.div`
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 10px;
 `
 
-export const NameText = styled.text`
-    color: #F2F2F0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: 5rem;
 
-    @media screen and (max-width: 960px){
-        font-size: 3.5rem;
-    }
-`
+

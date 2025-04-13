@@ -1,12 +1,15 @@
 import { 
     AboutMeContainer, 
     BtnCv, 
-    DescriptionContainer, 
+    DescriptionContainer,
+    StyledAnchor,
     DescriptionText, 
     PhotoContainer, 
     Title,
-    Photo} from "./AboutMe.elements"
+    Photo
+} from "./AboutMe.elements"
 import useWindowDimensions from '../../hooks/useWindowDimensions'
+import cv from "../../assets/cv.pdf";
 
 const AboutMe = () => {
 
@@ -15,14 +18,21 @@ const AboutMe = () => {
     return (
         <>
             <AboutMeContainer _currentHeigth={height}>
-                <PhotoContainer>
-                    <Photo></Photo>
-                </PhotoContainer>
                 <DescriptionContainer>
                     <Title>About me</Title>
-                    <DescriptionText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</DescriptionText>
-                    <BtnCv>download CV</BtnCv>
+                    <DescriptionText>
+                    Hi! I'm an app developer who enjoys building things that work well and make people's lives easier.
+                    I specialize in mobile development and love bringing ideas to life through code. I focus on building interfaces that do what they’re supposed to: fast, stable, and with a solid user experience.
+                    I’m always eager to learn new things, improve my skills, and work on projects where I can solve real-world problems. I'm naturally curious and always looking for ways to do things a little better than the day before.
+                    Right now, I'm focused on growing as a developer and contributing my experience to projects where code can make a real difference.
+                    </DescriptionText>
+                    <StyledAnchor href={cv} download="Mi_CV.pdf">
+                        <BtnCv>download CV</BtnCv>
+                    </StyledAnchor>
                 </DescriptionContainer>
+                {/* <PhotoContainer>
+                    <Photo></Photo>
+                </PhotoContainer> */}
             </AboutMeContainer>
         </>
     )

@@ -1,0 +1,1 @@
+export const WHITE_F1 = "#f1f1f1"
