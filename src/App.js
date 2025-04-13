@@ -22,9 +22,9 @@ function App() {
       <Home></Home>
       <AboutMe></AboutMe>
       <Skills></Skills>
-      <Portafolio></Portafolio>
+      {/* <Portafolio></Portafolio>
       <Experience></Experience>
-      <Contact></Contact>
+      <Contact></Contact> */}
     </>
   );
 }
