@@ -88,6 +88,7 @@ export const BtnCv = styled.div`
     height: 50px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     border: 3px solid black;
     border-radius: 10px;

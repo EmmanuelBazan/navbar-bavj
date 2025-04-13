@@ -21,7 +21,11 @@ module.exports = {
             {
                 type: "asset",
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
-            }
+            },
+            {
+                test: /\.pdf$/i,
+                type: 'asset/resource',
+            },
         ]
     },
     resolve: {
