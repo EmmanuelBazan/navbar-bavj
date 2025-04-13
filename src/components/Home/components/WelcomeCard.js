@@ -10,6 +10,14 @@ import {
 } from "../style/WelcomeCard.elements"
 
 const WelcomeCard = () => {
+    const URL_GITHUB = "https://github.com/EmmanuelBazan?tab=overview&from=2025-04-01&to=2025-04-13";
+    const URL_LINKEDIN = "https://www.linkedin.com/in/emmanuel-bazan-102822233/";
+    const URL_INSTAGRAM = "https://www.instagram.com/itsemmanuelbazan/";
+
+    const handleClick = (url) => {
+        window.location.href = url;
+    };
+
     return(
         <WelcomeCardContainer>
             <MyNameContainer>
@@ -24,9 +32,9 @@ const WelcomeCard = () => {
                 </PresentationText>
             </MyNameContainer>
             <IconsColumn>
-                <GithubIcon/>
-                <LinkedinIcon/>
-                <InstagramIcon/>
+                <GithubIcon onClick={() => {handleClick(URL_GITHUB)}} />
+                <LinkedinIcon onClick={() => {handleClick(URL_LINKEDIN)}} />
+                <InstagramIcon onClick={() => {handleClick(URL_INSTAGRAM)}} />
             </IconsColumn>
         </WelcomeCardContainer>
     )
