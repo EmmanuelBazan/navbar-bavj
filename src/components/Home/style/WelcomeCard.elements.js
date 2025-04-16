@@ -25,6 +25,11 @@ export const WelcomeCardContainer = styled.div`
     margin-bottom: 10px;
     border-radius: 15px;
     padding: 20px;
+
+    @media screen and (max-width: 960px){
+        flex-direction: column;
+        height: 30%;
+    }
 `
 
 export const MyNameContainer = styled.div`
@@ -33,6 +38,10 @@ export const MyNameContainer = styled.div`
     justify-content: center;
     background-color: transparent;
     height: 100%;
+
+    @media screen and (max-width: 960px){
+        justify-content: start;
+    }
 `
 
 export const PresentationText = styled.text`
@@ -44,7 +53,7 @@ export const PresentationText = styled.text`
     padding: 0px;
 
     @media screen and (max-width: 960px){
-        font-size: 1.8rem
+        font-size: 1.3rem
     }
 `
 
@@ -57,7 +66,7 @@ export const NameText = styled.text`
     padding: 0px;
 
     @media screen and (max-width: 960px){
-        font-size: 3.5rem;
+        font-size: 2.2rem;
     }
 `
 
@@ -68,6 +77,10 @@ export const IconsColumn = styled.div`
     background-color: transparent;
     justify-content: center;
     align-items: flex-end;
+
+    @media screen and (max-width: 960px){
+        flex-direction: row;
+    }
 `
 
 export const InstagramIcon = styled(Instagram)`
