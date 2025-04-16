@@ -22,7 +22,7 @@ export const Title = styled.p`
     transition: color 0.2s ease;
 
     @media screen and (max-width: 960px){
-        font-size: 3.5rem;
+        font-size: 2.2rem;
         color: #f1f1f1;
     }
 `
@@ -51,6 +51,7 @@ export const ContactCardContainer = styled.div`
 
     @media screen and (max-width: 960px){
         background-color: #BA2D17;
+        padding: 10px;
     }
 `
 
@@ -59,4 +60,9 @@ export const EmailIcon = styled(EmailOutline)`
     width: 100px;
     height: 100px;
     background-color: transparent;
+
+    @media screen and (max-width: 960px){
+        width: 100px;
+        height: 100px;
+    }
 `

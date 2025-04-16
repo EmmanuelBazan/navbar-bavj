@@ -44,6 +44,7 @@ export const ExpirienceContainer = styled.div`
 
     @media screen and (max-width: 960px){
         flex-direction: column;
+        height: 60%;
     }
 `
 

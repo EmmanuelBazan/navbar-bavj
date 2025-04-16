@@ -22,7 +22,7 @@ export const Title = styled.p`
     transition: color 0.2s ease;
 
     @media screen and (max-width: 960px){
-        font-size: 3.5rem;
+        font-size: 2.2rem;
         color: #f1f1f1;
     }
 `
@@ -37,7 +37,7 @@ export const SubTitle = styled.text`
     transition: color 0.2s ease;
 
     @media screen and (max-width: 960px){
-        font-size: 1rem;
+        font-size: 1.3rem;
         color: #f1f1f1;
     }
 `
@@ -73,6 +73,7 @@ export const ExpirienceCardContainer = styled.div`
         width: 100%;
         margin-bottom: 10px;
         background-color: #E98807;
+        padding: 10px;
     }
 `
 
@@ -81,6 +82,11 @@ export const BookIcon = styled(Bookstack)`
     width: 200px;
     height: 200px;
     background-color: transparent;
+
+    @media screen and (max-width: 960px){
+        width: 100px;
+        height: 100px;
+    }
 `
 
 export const IconContainer = styled.div`
