@@ -22,7 +22,7 @@ export const Title = styled.p`
     transition: color 0.2s ease;
 
     @media screen and (max-width: 960px){
-        font-size: 3.5rem;
+        font-size: 2.2rem;
         color: #f1f1f1;
     }
 `
@@ -37,7 +37,7 @@ export const SubTitle = styled.text`
     transition: color 0.2s ease;
 
     @media screen and (max-width: 960px){
-        font-size: 1rem;
+        font-size: 1.3rem;
         color: #f1f1f1;
     }
 `
@@ -70,6 +70,7 @@ export const ProjectsCardContainer = styled.div`
     @media screen and (max-width: 960px){
         width: 100%;
         background-color: #31776E;
+        padding: 10px;
     }
 `
 
@@ -78,6 +79,11 @@ export const GearIcon = styled(Gears)`
     width: 300px;
     height: 300px;
     background-color: transparent;
+
+    @media screen and (max-width: 960px){
+        width: 100px;
+        height: 100px;
+    }
 `
 
 export const IconContainer = styled.div`
