@@ -53,7 +53,7 @@ export const PresentationText = styled.text`
     padding: 0px;
 
     @media screen and (max-width: 960px){
-        font-size: 1.3rem
+        font-size: 1.0rem
     }
 `
 
@@ -66,7 +66,7 @@ export const NameText = styled.text`
     padding: 0px;
 
     @media screen and (max-width: 960px){
-        font-size: 2.2rem;
+        font-size: 1.5rem;
     }
 `
 
@@ -98,6 +98,11 @@ export const InstagramIcon = styled(Instagram)`
         width: 62px;
         height: 62px;
     }
+
+    @media screen and (max-width: 960px){
+        width: 22px;
+        height: 22px;
+    }
 `
 export const LinkedinIcon = styled(LinkedinSquare)`
     color: #0d0d0d;
@@ -113,6 +118,11 @@ export const LinkedinIcon = styled(LinkedinSquare)`
         animation: ${crecerYReducir} 0.2s ease-in-out;
         width: 62px;
         height: 62px;
+    }
+
+    @media screen and (max-width: 960px){
+        width: 22px;
+        height: 22px;
     }
 `
 
@@ -130,5 +140,10 @@ export const GithubIcon = styled(Github)`
         animation: ${crecerYReducir} 0.2s ease-in-out;
         width: 62px;
         height: 62px;
+    }
+
+    @media screen and (max-width: 960px){
+        width: 22px;
+        height: 22px;
     }
 `
