@@ -22,7 +22,7 @@ export const Title = styled.p`
     transition: color 0.2s ease;
 
     @media screen and (max-width: 960px){
-        font-size: 2.2rem;
+        font-size: 1.5rem;
         color: #f1f1f1;
     }
 `
@@ -37,7 +37,7 @@ export const SubTitle = styled.text`
     transition: color 0.2s ease;
 
     @media screen and (max-width: 960px){
-        font-size: 1.3rem;
+        font-size: 1.0rem;
         color: #f1f1f1;
     }
 `
@@ -81,8 +81,8 @@ export const GearIcon = styled(Gears)`
     background-color: transparent;
 
     @media screen and (max-width: 960px){
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
     }
 `
 
