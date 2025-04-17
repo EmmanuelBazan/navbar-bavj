@@ -23,7 +23,7 @@ export const Title = styled.p`
     transition: color 0.2s ease;
 
     @media screen and (max-width: 960px){
-        font-size: 2.2rem;
+        font-size: 1.5rem;
         color: #0d0d0d;
     }
 `
