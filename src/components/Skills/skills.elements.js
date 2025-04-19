@@ -9,6 +9,8 @@ export const SkillsContainer = styled.div`
     align-items: center;
     justify-content: center;
     height: 100vh;//${({_currentHeight}) => _currentHeight}px;
+
+    
 `;
 
 export const FirstBox = styled.div`
@@ -18,6 +20,13 @@ export const FirstBox = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 960px){
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        justify-content: start;
+    }
 `
 
 export const LineBox = styled.div`
@@ -37,6 +46,12 @@ export const TitleCard = styled.div`
     justify-content: center;
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 960px){
+        width: 100%;
+        height: 15%;
+        padding: 10px;
+    }
 `
 
 export const LongCard = styled.div`
@@ -50,6 +65,14 @@ export const LongCard = styled.div`
     align-items: center;
     display: flex;
     flex-direction: row;
+
+    @media screen and (max-width: 960px){
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 60%;
+    }
 `
 
 export const ShortCard = styled.div`
@@ -62,6 +85,11 @@ export const ShortCard = styled.div`
     justify-content: center;
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 960px){
+        padding: 10px;
+        width: 40%;
+    }
 `
 
 export const Title = styled.p`
@@ -74,8 +102,7 @@ export const Title = styled.p`
     transition: color 0.2s ease;
 
     @media screen and (max-width: 960px){
-        font-size: 3.5rem;
-        color: #f1f1f1;
+        font-size: 2.2rem;
     }
 `
 
@@ -90,8 +117,7 @@ export const H1Text = styled.p`
     margin-right: 10px;
 
     @media screen and (max-width: 960px){
-        font-size: 3.5rem;
-        color: #f1f1f1;
+        font-size: 1.8rem;
     }
 `
 
@@ -105,8 +131,7 @@ export const H2Text = styled.p`
     transition: color 0.2s ease;
 
     @media screen and (max-width: 960px){
-        font-size: 3.5rem;
-        color: #f1f1f1;
+        font-size: 1.3rem;
     }
 `
 
@@ -120,8 +145,7 @@ export const H3Text = styled.p`
     transition: color 0.2s ease;
 
     @media screen and (max-width: 960px){
-        font-size: 3.5rem;
-        color: #f1f1f1;
+        font-size: 1.0rem;
     }
 `
 

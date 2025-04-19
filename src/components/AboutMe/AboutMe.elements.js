@@ -10,8 +10,9 @@ export const AboutMeContainer = styled.div`
     width: 100%;
     height: ${({_currentHeigth = 100}) => _currentHeigth}px;
 
-    @media screen and (max-width: 960px){
+    @media screen and (max-width: 960px) {
         flex-direction: column;
+        padding: 10px;
     }
 `
 
@@ -46,8 +47,9 @@ export const DescriptionContainer = styled.div`
 
     @media screen and (max-width: 960px){
         width: 100%;
-        height: 60%;
+        height: 100%;
         align-items: center;
+        padding: 10px;
     }
 `
 
@@ -61,8 +63,7 @@ export const Title = styled.p`
     transition: color 0.2s ease;
 
     @media screen and (max-width: 960px){
-        font-size: 3.5rem;
-        color: #f1f1f1;
+        font-size: 2.2rem;
     }
 `
 
@@ -76,8 +77,7 @@ export const DescriptionText = styled.text`
     transition: color 0.2s ease;
 
     @media screen and (max-width: 960px){
-        font-size: 1rem;
-        color: #f1f1f1;
+        font-size: 1.3rem;
     }
 `
 
@@ -95,7 +95,10 @@ export const BtnCv = styled.div`
 
     @media screen and (max-width: 960px){
         width: 100%;
-        max-width: 500px;
+        background-color: #f1f1f1;
+        font-size: 1.0rem;
+        padding: 10px;
+        text-decoration: none;
     }
 `
 
